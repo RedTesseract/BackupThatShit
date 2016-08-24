@@ -1,0 +1,9 @@
+c:\users\svenv\documents\visual studio 2012\Projects\BackupThatShit2\BackupThatShit2\bin\Debug\BackupThatShit2.exe.config
+c:\users\svenv\documents\visual studio 2012\Projects\BackupThatShit2\BackupThatShit2\bin\Debug\BackupThatShit2.exe
+c:\users\svenv\documents\visual studio 2012\Projects\BackupThatShit2\BackupThatShit2\bin\Debug\BackupThatShit2.pdb
+c:\users\svenv\documents\visual studio 2012\Projects\BackupThatShit2\BackupThatShit2\obj\Debug\BackupThatShit2.csprojResolveAssemblyReference.cache
+c:\users\svenv\documents\visual studio 2012\Projects\BackupThatShit2\BackupThatShit2\obj\Debug\BackupThatShit2.Properties.Resources.resources
+c:\users\svenv\documents\visual studio 2012\Projects\BackupThatShit2\BackupThatShit2\obj\Debug\BackupThatShit2.csproj.GenerateResource.Cache
+c:\users\svenv\documents\visual studio 2012\Projects\BackupThatShit2\BackupThatShit2\obj\Debug\BackupThatShit2.exe
+c:\users\svenv\documents\visual studio 2012\Projects\BackupThatShit2\BackupThatShit2\obj\Debug\BackupThatShit2.pdb
+c:\users\svenv\documents\visual studio 2012\Projects\BackupThatShit2\BackupThatShit2\obj\Debug\BackupThatShit2.frmSettings.resources

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Settings>
+  <folder_backup_enabled>1</folder_backup_enabled>
+  <target_folder>C:\Users\svenv\Documents\Visual Studio 2012\Projects\BackupThatShit2\BackupThatShit2\bin\Debug\Backups</target_folder>
+  <folder_redundancy>1</folder_redundancy>
+  <timer_folder_enabled>0</timer_folder_enabled>
+  <timer_folder_interval>17</timer_folder_interval>
+</Settings>
