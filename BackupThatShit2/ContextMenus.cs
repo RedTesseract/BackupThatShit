@@ -52,48 +52,7 @@ namespace BackupThatShit2
 
         void Explorer_Click(object sender, EventArgs e)
         {
-            string menuCommand = string.Format("\"{0}\" \"%L\"",
-                                   Application.ExecutablePath);
-            Debug.WriteLine("CLICKED: " + menuCommand);
-            Register("Directory", "BTSRT", "Backup That Shit", menuCommand);
-
-            //Unregister("jpegfile", "Simple Context Menu");
-            //Process.Start(SettingsManager.currentSS.targetFolder, null);
-        }
-
-        public void Register(string fileType,
-           string shellKeyName, string menuText, string menuCommand)
-        {
-            // create path to registry location
-            string regPath = string.Format(@"{0}\shell\{1}",
-                                           fileType, shellKeyName);
-
-            // add context menu to the registry
-            using (RegistryKey key =
-                   Registry.ClassesRoot.CreateSubKey(regPath))
-            {
-                key.SetValue(null, menuText);
-            }
-
-            // add command that is invoked to the registry
-            using (RegistryKey key = Registry.ClassesRoot.CreateSubKey(
-                string.Format(@"{0}\command", regPath)))
-            {
-                key.SetValue(null, menuCommand);
-            }
-        }
-
-        public void Unregister(string fileType, string shellKeyName)
-        {
-            Debug.Assert(!string.IsNullOrEmpty(fileType) &&
-                !string.IsNullOrEmpty(shellKeyName));
-
-            // path to the registry location
-            string regPath = string.Format(@"{0}\shell\{1}",
-                                           fileType, shellKeyName);
-
-            // remove context menu from the registry
-            Registry.ClassesRoot.DeleteSubKeyTree(regPath);
+            Process.Start(SettingsManager.currentSS.targetFolder, null);
         }
 
         void Settings_Click(object sender, EventArgs e)

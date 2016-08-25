@@ -29,7 +29,7 @@ namespace BackupThatShit2
             }
             else
             {
-                loadSettings();
+                currentSS = loadSettings();
             }
         }
 
@@ -90,10 +90,10 @@ namespace BackupThatShit2
             return true;
         }
 
-        public static void loadSettings()
+        public static SettingStructure loadSettings()
         {
             XmlDataDocument xmldoc = new XmlDataDocument();
-            FileStream fs = new FileStream("settings.xml", FileMode.Open, FileAccess.Read);
+            FileStream fs = new FileStream(AppDomain.CurrentDomain.BaseDirectory + @"\settings.xml", FileMode.Open, FileAccess.Read);
             xmldoc.Load(fs);
 
             string foldersEnabled = readXmlNode(xmldoc.GetElementsByTagName("folder_backup_enabled"));
@@ -104,7 +104,7 @@ namespace BackupThatShit2
 
             SettingStructure ss = new SettingStructure(foldersEnabled, folderRedundancy, targetFolder, folderTimerEnabled, folderTimerInterval);
             fs.Close();
-            currentSS = ss;
+            return ss;
         }
 
         private static string readXmlNode(XmlNodeList xmlnode)
